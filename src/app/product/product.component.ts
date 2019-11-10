@@ -6,7 +6,7 @@ import { Product }  from './Product';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  title :  string  ="Component to View"
+  title :  string  ="View to Component";
     product : Product = {
     id :1 ,
     name : "Product 1",
@@ -20,9 +20,14 @@ export class ProductComponent implements OnInit {
  
   ngOnInit() {
   }
-  onClickMe = event =>{
+  onClickMe = event => {
 
     this.title = 'Event Binding';
+  }
+
+  handleKeyUp = event => {
+    this.product.id = event.target.value;
+
   }
 
 }

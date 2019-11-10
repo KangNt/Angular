@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
 import { NewsComponent } from './news/news.component';
 import { ProductComponent } from './product/product.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BannerComponent,
     NewsComponent,
-    ProductComponent
+    ProductComponent,
+    TwoWayBindingComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
